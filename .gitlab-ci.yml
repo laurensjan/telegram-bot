@@ -16,7 +16,7 @@ cache:
 build:
   stage: build
   script: 
-    -npm install
+    - npm install
 
 test:
   stage: test
