@@ -2,6 +2,10 @@
 # https://hub.docker.com/r/library/node/tags/
 image: node:latest
 
+stages:
+  - build
+  - test
+  - run
 
 # This folder is cached between builds
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
@@ -9,7 +13,12 @@ cache:
   paths:
   - node_modules/
 
+build:
+  stage: build
+  script: 
+    -npm install
+
 test:
+  stage: test
   script:
-    - npm install
     - ./node_modules/.bin/eslint ./bot.js

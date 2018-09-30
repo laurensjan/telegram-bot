@@ -4,7 +4,8 @@
   "description": "GelBot telegram bot",
   "main": "bot.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint bot.js"
+    "start": "node ./bot.js",
+    "test": "./node_modules/.bin/eslint ./bot.js"
   },
   "author": "lj",
   "license": "ISC",
