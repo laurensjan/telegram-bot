@@ -11,4 +11,5 @@ cache:
 
 test:
   script:
+    - npm install
     - eslint bot.js
