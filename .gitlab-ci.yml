@@ -23,7 +23,7 @@ test:
   script:
     - ./node_modules/.bin/eslint ./bot.js
 
-deploy to production:
+deploy_to_production:
   stage: production
   environment: production
   
