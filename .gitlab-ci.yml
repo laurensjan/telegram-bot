@@ -25,6 +25,10 @@ test:
 
 deploy_to_production:
   stage: deploy
-  environment: production
+  environment: 
+    name: staging
+    url: https://staging.gel-bot.ljay.space
+  only:
+    - master
   script: 
     - npm start
